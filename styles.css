@@ -103,38 +103,26 @@ h2 {
   cursor: pointer;
 }
 
+h3 {
+  display: none;
+}
+
 /* Styles for all screens */
 
 /* Media query for mobile screens */
-@media screen and (max-width: 425px) {
-  h1 {
-    padding: 10px;
-    font-size: 20px;
-    width: 70%;
+@media screen and (max-width: 768px) {
+  .center {
+    display: none;
+  }
+
+  .recordedVideo {
+    display: none;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
     margin: 10px;
-  }
-
-  .videoFeedback {
-    width: 80%;
-  }
-
-  .startRecording,
-  .stopRecording {
-    padding: 7px;
-    margin: 5px;
-    margin-top: 10px;
-  }
-
-  .myRecordedVideo {
-    width: 80%;
-  }
-
-  .btnNewContainer {
-    margin-top: 10px;
-    padding: 10px;
-  }
-
-  .newRecording {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
